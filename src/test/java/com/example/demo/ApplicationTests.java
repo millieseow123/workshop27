@@ -19,7 +19,7 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 @SpringBootTest
 public class ApplicationTests {
 
-	@MockBean
+	@Autowired
 	private AccountRepository accRepo;
 
 	@Autowired
