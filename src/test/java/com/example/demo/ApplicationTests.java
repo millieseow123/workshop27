@@ -43,7 +43,7 @@ public class ApplicationTests {
 
 	@Test
 	public void notTransactional() {
-		accSvc.transfer("Testing", "Testing4", 50f);
+		accSvc.transfer("Testing", "Testing1", 50f);
 		assertTrue(true);
 	}
 
