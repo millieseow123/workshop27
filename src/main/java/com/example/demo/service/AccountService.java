@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 @Service
-
 public class AccountService {
     
     @Autowired
@@ -19,7 +18,7 @@ public class AccountService {
             accRepo.withdraw(amount, sourceAcc);
             if (amount > 300)
                 throw new IllegalArgumentException("You do not have sufficient balance");
-
+                accRepo.deposit(amount, destAcc);
         } catch (Exception e) {
             e.printStackTrace();
             throw e;
