@@ -25,15 +25,15 @@ public class ApplicationTests {
 	@Autowired
 	private AccountService accSvc;
 
-	@Test
-	public void depositShouldSucceed() {
+	// @Test
+	// public void depositShouldSucceed() {
 
-		Mockito.when(accRepo.withdraw(500, "Testing")).thenThrow(IllegalArgumentException.class);
+	// 	Mockito.when(accRepo.withdraw(500, "Testing")).thenThrow(IllegalArgumentException.class);
 
-		assertThrows(IllegalArgumentException.class,
-				() -> accSvc.transfer("Testing", "Testing4", 1000f));
+	// 	assertThrows(IllegalArgumentException.class,
+	// 			() -> accSvc.transfer("Testing", "Testing4", 1000f));
 
-	}
+	// }
 
 	@Test
 	void shouldFindTesting() {
