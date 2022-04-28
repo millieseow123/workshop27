@@ -36,6 +36,12 @@ public class ApplicationTests {
 	}
 
 	@Test
+	void shouldFindTesting() {
+		Optional<Account> opt = accRepo.findAccount("Testing");
+		assertTrue(opt.isPresent());
+	}
+
+	@Test
 	public void notTransactional() {
 		accSvc.transfer("Testing", "Testing4", 50f);
 		assertTrue(true);
